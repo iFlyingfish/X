@@ -48,6 +48,8 @@
 		50D7C97017EBBEEC005D0B91 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D7C96F17EBBEEC005D0B91 /* IOKit.framework */; };
 		521A8E6A19F0C3AC00D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6819F0C3AC00D177D7 /* Default-667h@2x.png */; };
 		521A8E6B19F0C3AC00D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6919F0C3AC00D177D7 /* Default-736h@3x.png */; };
+		B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */; };
+		B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */; };
 		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -163,6 +165,10 @@
 		50D7C96F17EBBEEC005D0B91 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		521A8E6819F0C3AC00D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6919F0C3AC00D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XCharacterSprite.cpp; sourceTree = "<group>"; };
+		B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCharacterSprite.h; sourceTree = "<group>"; };
+		B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayerSprite.cpp; sourceTree = "<group>"; };
+		B33112E41A5BC0BD00AA6FA6 /* XPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayerSprite.h; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -347,6 +353,10 @@
 				15427C7E198F201A00DC375D /* lua_module_register.h */,
 				F293BB7E15EB831F00256477 /* AppDelegate.cpp */,
 				F293BB7F15EB831F00256477 /* AppDelegate.h */,
+				B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */,
+				B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */,
+				B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */,
+				B33112E41A5BC0BD00AA6FA6 /* XPlayerSprite.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -559,8 +569,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
+				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
