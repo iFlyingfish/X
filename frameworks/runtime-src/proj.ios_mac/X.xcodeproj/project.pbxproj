@@ -50,6 +50,9 @@
 		521A8E6B19F0C3AC00D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6919F0C3AC00D177D7 /* Default-736h@3x.png */; };
 		B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */; };
 		B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */; };
+		B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D18E1A6CACD100815657 /* XPlayer.cpp */; };
+		B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */; };
+		B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */; };
 		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -169,6 +172,12 @@
 		B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCharacterSprite.h; sourceTree = "<group>"; };
 		B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayerSprite.cpp; sourceTree = "<group>"; };
 		B33112E41A5BC0BD00AA6FA6 /* XPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayerSprite.h; sourceTree = "<group>"; };
+		B3A6D18E1A6CACD100815657 /* XPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayer.cpp; sourceTree = "<group>"; };
+		B3A6D18F1A6CACD100815657 /* XPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayer.h; sourceTree = "<group>"; };
+		B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBattleInfo.cpp; sourceTree = "<group>"; };
+		B3A6D1921A6CAE0500815657 /* XBattleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBattleInfo.h; sourceTree = "<group>"; };
+		B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHallInfo.cpp; sourceTree = "<group>"; };
+		B3A6D1951A6CAE5200815657 /* XHallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHallInfo.h; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -357,6 +366,12 @@
 				B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */,
 				B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */,
 				B33112E41A5BC0BD00AA6FA6 /* XPlayerSprite.h */,
+				B3A6D18E1A6CACD100815657 /* XPlayer.cpp */,
+				B3A6D18F1A6CACD100815657 /* XPlayer.h */,
+				B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */,
+				B3A6D1921A6CAE0500815657 /* XBattleInfo.h */,
+				B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */,
+				B3A6D1951A6CAE5200815657 /* XHallInfo.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -569,11 +584,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */,
 				B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
+				B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */,
+				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
