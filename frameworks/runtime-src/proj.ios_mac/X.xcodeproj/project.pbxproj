@@ -50,6 +50,7 @@
 		521A8E6B19F0C3AC00D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6919F0C3AC00D177D7 /* Default-736h@3x.png */; };
 		B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */; };
 		B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */; };
+		B3643A621A6E006800BD8FD4 /* XTexturePacker.sh in Resources */ = {isa = PBXBuildFile; fileRef = B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */; };
 		B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D18E1A6CACD100815657 /* XPlayer.cpp */; };
 		B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */; };
 		B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */; };
@@ -172,6 +173,7 @@
 		B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCharacterSprite.h; sourceTree = "<group>"; };
 		B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayerSprite.cpp; sourceTree = "<group>"; };
 		B33112E41A5BC0BD00AA6FA6 /* XPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayerSprite.h; sourceTree = "<group>"; };
+		B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = XTexturePacker.sh; sourceTree = "<group>"; };
 		B3A6D18E1A6CACD100815657 /* XPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayer.cpp; sourceTree = "<group>"; };
 		B3A6D18F1A6CACD100815657 /* XPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayer.h; sourceTree = "<group>"; };
 		B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBattleInfo.cpp; sourceTree = "<group>"; };
@@ -299,6 +301,23 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		B3643A5E1A6E000800BD8FD4 /* ArtResource */ = {
+			isa = PBXGroup;
+			children = (
+				B3643A5F1A6E000800BD8FD4 /* Cooked */,
+				B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */,
+			);
+			name = ArtResource;
+			path = ../../../ArtResource;
+			sourceTree = "<group>";
+		};
+		B3643A5F1A6E000800BD8FD4 /* Cooked */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cooked;
+			sourceTree = "<group>";
+		};
 		C03781AF18BF654500FE4F13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +335,7 @@
 				5023810617EBBCAC00990C9B /* ios */,
 				5023817117EBBE3400990C9B /* mac */,
 				F293BB7C15EB830F00256477 /* Classes */,
+				B3643A5E1A6E000800BD8FD4 /* ArtResource */,
 				F293B3CB15EB7BE500256477 /* Frameworks */,
 				F293B3C915EB7BE500256477 /* Products */,
 				F293BC4615EB859D00256477 /* Resources */,
@@ -388,6 +408,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		B3643A631A6E012E00BD8FD4 /* XTexturePacker */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"$(PROJECT_DIR)/../../../ArtResource/XTexturePacker.sh\"";
+			buildConfigurationList = B3643A641A6E012E00BD8FD4 /* Build configuration list for PBXLegacyTarget "XTexturePacker" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "$(SRCROOT)/../../..";
+			dependencies = (
+			);
+			name = XTexturePacker;
+			passBuildSettingsInEnvironment = 1;
+			productName = XTexturePacker;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		5023812617EBBCE400990C9B /* X Mac */ = {
 			isa = PBXNativeTarget;
@@ -437,6 +474,9 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
+					B3643A631A6E012E00BD8FD4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					F293B3C715EB7BE500256477 = {
 						DevelopmentTeam = MDDB52YB8L;
 					};
@@ -466,6 +506,7 @@
 			targets = (
 				F293B3C715EB7BE500256477 /* X iOS */,
 				5023812617EBBCE400990C9B /* X Mac */,
+				B3643A631A6E012E00BD8FD4 /* XTexturePacker */,
 			);
 		};
 /* End PBXProject section */
@@ -529,6 +570,7 @@
 				5023812017EBBCAC00990C9B /* Icon-57.png in Resources */,
 				C03781B918BF655400FE4F13 /* res in Resources */,
 				5023812217EBBCAC00990C9B /* Icon-76.png in Resources */,
+				B3643A621A6E006800BD8FD4 /* XTexturePacker.sh in Resources */,
 				5091733A17ECE17A00D62437 /* Icon-80.png in Resources */,
 				5091733717ECE17A00D62437 /* Icon-40.png in Resources */,
 				5023811E17EBBCAC00990C9B /* Icon-144.png in Resources */,
@@ -677,6 +719,81 @@
 			};
 			name = Release;
 		};
+		B3643A651A6E012E00BD8FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUGGING_SYMBOLS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B3643A661A6E012E00BD8FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		F293B6C215EB7BEA00256477 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -783,6 +900,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B3643A641A6E012E00BD8FD4 /* Build configuration list for PBXLegacyTarget "XTexturePacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3643A651A6E012E00BD8FD4 /* Debug */,
+				B3643A661A6E012E00BD8FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		F293B3C215EB7BE500256477 /* Build configuration list for PBXProject "X" */ = {
 			isa = XCConfigurationList;
