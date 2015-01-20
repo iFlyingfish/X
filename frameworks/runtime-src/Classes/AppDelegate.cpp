@@ -3,6 +3,7 @@
 #include "SimpleAudioEngine.h"
 #include "cocos2d.h"
 #include "lua_module_register.h"
+#include "HelloWorldScene.h"
 
 using namespace CocosDenshion;
 
@@ -31,17 +32,38 @@ void AppDelegate::initGLContextAttrs()
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-    auto engine = LuaEngine::getInstance();
-    ScriptEngineManager::getInstance()->setScriptEngine(engine);
-    lua_State* L = engine->getLuaStack()->getLuaState();
-    lua_module_register(L);
-
-    // If you want to use Quick-Cocos2d-X, please uncomment below code
-    // register_all_quick_manual(L);
-
-    if (engine->executeScriptFile("src/main.lua")) {
-        return false;
+//    auto engine = LuaEngine::getInstance();
+//    ScriptEngineManager::getInstance()->setScriptEngine(engine);
+//    lua_State* L = engine->getLuaStack()->getLuaState();
+//    lua_module_register(L);
+//
+//    // If you want to use Quick-Cocos2d-X, please uncomment below code
+//    // register_all_quick_manual(L);
+//
+//    if (engine->executeScriptFile("src/main.lua")) {
+//        return false;
+//    }
+    
+    
+    // initialize director
+    auto director = Director::getInstance();
+    auto glview = director->getOpenGLView();
+    if(!glview) {
+        glview = GLViewImpl::create("My Game");
+        director->setOpenGLView(glview);
     }
+    
+    // turn on display FPS
+    director->setDisplayStats(true);
+    
+    // set FPS. the default value is 1.0/60 if you don't call this
+    director->setAnimationInterval(1.0 / 60);
+    
+    // create a scene. it's an autorelease object
+    auto scene = HelloWorld::createScene();
+    
+    // run
+    director->runWithScene(scene);
 
     return true;
 }

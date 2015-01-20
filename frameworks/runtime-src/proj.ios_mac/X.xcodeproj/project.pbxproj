@@ -54,6 +54,24 @@
 		B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D18E1A6CACD100815657 /* XPlayer.cpp */; };
 		B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */; };
 		B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */; };
+		B3B493D71A6E34C300207881 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3B493D51A6E34C300207881 /* HelloWorldScene.cpp */; };
+		B3B493E01A6E391900207881 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B493DF1A6E391900207881 /* HelloWorld.png */; };
+		B3B494001A6E486100207881 /* UI_Battle_hunbase-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493ED1A6E486100207881 /* UI_Battle_hunbase-hd.plist */; };
+		B3B494011A6E486100207881 /* UI_Battle_hunbase-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493EE1A6E486100207881 /* UI_Battle_hunbase-hd.pvr.ccz */; };
+		B3B494021A6E486100207881 /* UI_Battle_hunbase.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493EF1A6E486100207881 /* UI_Battle_hunbase.plist */; };
+		B3B494031A6E486100207881 /* UI_Battle_hunbase.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F01A6E486100207881 /* UI_Battle_hunbase.pvr.ccz */; };
+		B3B494041A6E486100207881 /* UI_Battle_Public-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F21A6E486100207881 /* UI_Battle_Public-hd.plist */; };
+		B3B494051A6E486100207881 /* UI_Battle_Public-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F31A6E486100207881 /* UI_Battle_Public-hd.pvr.ccz */; };
+		B3B494061A6E486100207881 /* UI_Battle_Public.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F41A6E486100207881 /* UI_Battle_Public.plist */; };
+		B3B494071A6E486100207881 /* UI_Battle_Public.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F51A6E486100207881 /* UI_Battle_Public.pvr.ccz */; };
+		B3B494081A6E486100207881 /* UI_Battle_shangbase-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F71A6E486100207881 /* UI_Battle_shangbase-hd.plist */; };
+		B3B494091A6E486100207881 /* UI_Battle_shangbase-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F81A6E486100207881 /* UI_Battle_shangbase-hd.pvr.ccz */; };
+		B3B4940A1A6E486100207881 /* UI_Battle_shangbase.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493F91A6E486100207881 /* UI_Battle_shangbase.plist */; };
+		B3B4940B1A6E486100207881 /* UI_Battle_shangbase.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FA1A6E486100207881 /* UI_Battle_shangbase.pvr.ccz */; };
+		B3B4940C1A6E486100207881 /* UI_Battle_xuanbase-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FC1A6E486100207881 /* UI_Battle_xuanbase-hd.plist */; };
+		B3B4940D1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FD1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz */; };
+		B3B4940E1A6E486100207881 /* UI_Battle_xuanbase.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FE1A6E486100207881 /* UI_Battle_xuanbase.plist */; };
+		B3B4940F1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FF1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz */; };
 		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -180,6 +198,25 @@
 		B3A6D1921A6CAE0500815657 /* XBattleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBattleInfo.h; sourceTree = "<group>"; };
 		B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHallInfo.cpp; sourceTree = "<group>"; };
 		B3A6D1951A6CAE5200815657 /* XHallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHallInfo.h; sourceTree = "<group>"; };
+		B3B493D51A6E34C300207881 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
+		B3B493D61A6E34C300207881 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		B3B493DF1A6E391900207881 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HelloWorld.png; path = ../../../HelloWorld.png; sourceTree = "<group>"; };
+		B3B493ED1A6E486100207881 /* UI_Battle_hunbase-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UI_Battle_hunbase-hd.plist"; sourceTree = "<group>"; };
+		B3B493EE1A6E486100207881 /* UI_Battle_hunbase-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UI_Battle_hunbase-hd.pvr.ccz"; sourceTree = "<group>"; };
+		B3B493EF1A6E486100207881 /* UI_Battle_hunbase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UI_Battle_hunbase.plist; sourceTree = "<group>"; };
+		B3B493F01A6E486100207881 /* UI_Battle_hunbase.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = UI_Battle_hunbase.pvr.ccz; sourceTree = "<group>"; };
+		B3B493F21A6E486100207881 /* UI_Battle_Public-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UI_Battle_Public-hd.plist"; sourceTree = "<group>"; };
+		B3B493F31A6E486100207881 /* UI_Battle_Public-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UI_Battle_Public-hd.pvr.ccz"; sourceTree = "<group>"; };
+		B3B493F41A6E486100207881 /* UI_Battle_Public.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UI_Battle_Public.plist; sourceTree = "<group>"; };
+		B3B493F51A6E486100207881 /* UI_Battle_Public.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = UI_Battle_Public.pvr.ccz; sourceTree = "<group>"; };
+		B3B493F71A6E486100207881 /* UI_Battle_shangbase-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UI_Battle_shangbase-hd.plist"; sourceTree = "<group>"; };
+		B3B493F81A6E486100207881 /* UI_Battle_shangbase-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UI_Battle_shangbase-hd.pvr.ccz"; sourceTree = "<group>"; };
+		B3B493F91A6E486100207881 /* UI_Battle_shangbase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UI_Battle_shangbase.plist; sourceTree = "<group>"; };
+		B3B493FA1A6E486100207881 /* UI_Battle_shangbase.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = UI_Battle_shangbase.pvr.ccz; sourceTree = "<group>"; };
+		B3B493FC1A6E486100207881 /* UI_Battle_xuanbase-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UI_Battle_xuanbase-hd.plist"; sourceTree = "<group>"; };
+		B3B493FD1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UI_Battle_xuanbase-hd.pvr.ccz"; sourceTree = "<group>"; };
+		B3B493FE1A6E486100207881 /* UI_Battle_xuanbase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UI_Battle_xuanbase.plist; sourceTree = "<group>"; };
+		B3B493FF1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = UI_Battle_xuanbase.pvr.ccz; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -314,8 +351,64 @@
 		B3643A5F1A6E000800BD8FD4 /* Cooked */ = {
 			isa = PBXGroup;
 			children = (
+				B3B493EB1A6E486100207881 /* UI */,
 			);
 			path = Cooked;
+			sourceTree = "<group>";
+		};
+		B3B493EB1A6E486100207881 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B3B493EC1A6E486100207881 /* UI_Battle_hunbase */,
+				B3B493F11A6E486100207881 /* UI_Battle_Public */,
+				B3B493F61A6E486100207881 /* UI_Battle_shangbase */,
+				B3B493FB1A6E486100207881 /* UI_Battle_xuanbase */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B3B493EC1A6E486100207881 /* UI_Battle_hunbase */ = {
+			isa = PBXGroup;
+			children = (
+				B3B493ED1A6E486100207881 /* UI_Battle_hunbase-hd.plist */,
+				B3B493EE1A6E486100207881 /* UI_Battle_hunbase-hd.pvr.ccz */,
+				B3B493EF1A6E486100207881 /* UI_Battle_hunbase.plist */,
+				B3B493F01A6E486100207881 /* UI_Battle_hunbase.pvr.ccz */,
+			);
+			path = UI_Battle_hunbase;
+			sourceTree = "<group>";
+		};
+		B3B493F11A6E486100207881 /* UI_Battle_Public */ = {
+			isa = PBXGroup;
+			children = (
+				B3B493F21A6E486100207881 /* UI_Battle_Public-hd.plist */,
+				B3B493F31A6E486100207881 /* UI_Battle_Public-hd.pvr.ccz */,
+				B3B493F41A6E486100207881 /* UI_Battle_Public.plist */,
+				B3B493F51A6E486100207881 /* UI_Battle_Public.pvr.ccz */,
+			);
+			path = UI_Battle_Public;
+			sourceTree = "<group>";
+		};
+		B3B493F61A6E486100207881 /* UI_Battle_shangbase */ = {
+			isa = PBXGroup;
+			children = (
+				B3B493F71A6E486100207881 /* UI_Battle_shangbase-hd.plist */,
+				B3B493F81A6E486100207881 /* UI_Battle_shangbase-hd.pvr.ccz */,
+				B3B493F91A6E486100207881 /* UI_Battle_shangbase.plist */,
+				B3B493FA1A6E486100207881 /* UI_Battle_shangbase.pvr.ccz */,
+			);
+			path = UI_Battle_shangbase;
+			sourceTree = "<group>";
+		};
+		B3B493FB1A6E486100207881 /* UI_Battle_xuanbase */ = {
+			isa = PBXGroup;
+			children = (
+				B3B493FC1A6E486100207881 /* UI_Battle_xuanbase-hd.plist */,
+				B3B493FD1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz */,
+				B3B493FE1A6E486100207881 /* UI_Battle_xuanbase.plist */,
+				B3B493FF1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz */,
+			);
+			path = UI_Battle_xuanbase;
 			sourceTree = "<group>";
 		};
 		C03781AF18BF654500FE4F13 /* Products */ = {
@@ -382,6 +475,8 @@
 				15427C7E198F201A00DC375D /* lua_module_register.h */,
 				F293BB7E15EB831F00256477 /* AppDelegate.cpp */,
 				F293BB7F15EB831F00256477 /* AppDelegate.h */,
+				B3B493D51A6E34C300207881 /* HelloWorldScene.cpp */,
+				B3B493D61A6E34C300207881 /* HelloWorldScene.h */,
 				B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */,
 				B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */,
 				B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */,
@@ -399,6 +494,7 @@
 		F293BC4615EB859D00256477 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B3B493DF1A6E391900207881 /* HelloWorld.png */,
 				C03781B718BF655400FE4F13 /* res */,
 				C03781B818BF655400FE4F13 /* src */,
 			);
@@ -560,20 +656,37 @@
 				15A8A4491834C64F00142BE0 /* Icon-114.png in Resources */,
 				5023811D17EBBCAC00990C9B /* Icon-120.png in Resources */,
 				5091733B17ECE17A00D62437 /* Icon-100.png in Resources */,
+				B3B494071A6E486100207881 /* UI_Battle_Public.pvr.ccz in Resources */,
 				5023811B17EBBCAC00990C9B /* Default@2x.png in Resources */,
 				5091733617ECE17A00D62437 /* Icon-29.png in Resources */,
 				5023811917EBBCAC00990C9B /* Default-568h@2x.png in Resources */,
 				5091733917ECE17A00D62437 /* Icon-58.png in Resources */,
+				B3B4940A1A6E486100207881 /* UI_Battle_shangbase.plist in Resources */,
+				B3B4940D1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz in Resources */,
+				B3B494021A6E486100207881 /* UI_Battle_hunbase.plist in Resources */,
+				B3B494011A6E486100207881 /* UI_Battle_hunbase-hd.pvr.ccz in Resources */,
+				B3B494061A6E486100207881 /* UI_Battle_Public.plist in Resources */,
 				521A8E6B19F0C3AC00D177D7 /* Default-736h@3x.png in Resources */,
 				521A8E6A19F0C3AC00D177D7 /* Default-667h@2x.png in Resources */,
 				5023811F17EBBCAC00990C9B /* Icon-152.png in Resources */,
 				5023812017EBBCAC00990C9B /* Icon-57.png in Resources */,
+				B3B494091A6E486100207881 /* UI_Battle_shangbase-hd.pvr.ccz in Resources */,
 				C03781B918BF655400FE4F13 /* res in Resources */,
+				B3B4940F1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz in Resources */,
 				5023812217EBBCAC00990C9B /* Icon-76.png in Resources */,
+				B3B4940B1A6E486100207881 /* UI_Battle_shangbase.pvr.ccz in Resources */,
+				B3B494031A6E486100207881 /* UI_Battle_hunbase.pvr.ccz in Resources */,
 				B3643A621A6E006800BD8FD4 /* XTexturePacker.sh in Resources */,
 				5091733A17ECE17A00D62437 /* Icon-80.png in Resources */,
+				B3B4940E1A6E486100207881 /* UI_Battle_xuanbase.plist in Resources */,
+				B3B494001A6E486100207881 /* UI_Battle_hunbase-hd.plist in Resources */,
+				B3B494051A6E486100207881 /* UI_Battle_Public-hd.pvr.ccz in Resources */,
+				B3B4940C1A6E486100207881 /* UI_Battle_xuanbase-hd.plist in Resources */,
 				5091733717ECE17A00D62437 /* Icon-40.png in Resources */,
 				5023811E17EBBCAC00990C9B /* Icon-144.png in Resources */,
+				B3B494041A6E486100207881 /* UI_Battle_Public-hd.plist in Resources */,
+				B3B493E01A6E391900207881 /* HelloWorld.png in Resources */,
+				B3B494081A6E486100207881 /* UI_Battle_shangbase-hd.plist in Resources */,
 				5023811A17EBBCAC00990C9B /* Default.png in Resources */,
 				C03781BB18BF655400FE4F13 /* src in Resources */,
 				5091733817ECE17A00D62437 /* Icon-50.png in Resources */,
@@ -632,6 +745,7 @@
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
+				B3B493D71A6E34C300207881 /* HelloWorldScene.cpp in Sources */,
 				B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */,
 				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
@@ -908,6 +1022,7 @@
 				B3643A661A6E012E00BD8FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F293B3C215EB7BE500256477 /* Build configuration list for PBXProject "X" */ = {
 			isa = XCConfigurationList;
