@@ -144,6 +144,13 @@
 			remoteGlobalIDString = A07A4D641783777C0073F6A7;
 			remoteInfo = "cocos2dx iOS";
 		};
+		B3B494101A6E56FA00207881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F293B3BF15EB7BE500256477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3643A631A6E012E00BD8FD4;
+			remoteInfo = XTexturePacker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -554,6 +561,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B3B494111A6E56FA00207881 /* PBXTargetDependency */,
 				15427C65198F1E7400DC375D /* PBXTargetDependency */,
 				15427C67198F1E7400DC375D /* PBXTargetDependency */,
 			);
@@ -774,6 +782,11 @@
 			isa = PBXTargetDependency;
 			name = "libcocos2d Mac";
 			targetProxy = 15427C72198F1F4D00DC375D /* PBXContainerItemProxy */;
+		};
+		B3B494111A6E56FA00207881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3643A631A6E012E00BD8FD4 /* XTexturePacker */;
+			targetProxy = B3B494101A6E56FA00207881 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
