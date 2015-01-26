@@ -1,6 +1,9 @@
 #include "HelloWorldScene.h"
+#include "cocostudio/CCArmature.h"
+#include "cocostudio/CCArmatureDataManager.h"
 
 USING_NS_CC;
+//using namespace cocostudio;
 
 Scene* HelloWorld::createScene()
 {
@@ -80,9 +83,22 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
     
+    ArmatureDataManager::getInstance()->addArmatureFileInfo("NewAnimation0.png","NewAnimation0.plist","NewAnimation.ExportJson");
+    armature = Armature::create("NewAnimation");
+    armature->retain();
+    armature->setPosition(Point(visibleSize.width * 0.5, visibleSize.height * 0.5));
+  //  armature->getAnimation()->play("Walk");
+    this->addChild(armature);
+    
+    this->schedule(schedule_selector(HelloWorld::playAnimationTest), 1.0f);
     return true;
 }
 
+void HelloWorld::playAnimationTest(float dt)
+{
+    armature->getAnimation()->setSpeedScale(0.1);
+    armature->getAnimation()->play("Walk");
+}
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {

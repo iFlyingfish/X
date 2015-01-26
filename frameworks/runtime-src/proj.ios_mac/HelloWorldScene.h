@@ -3,8 +3,16 @@
 
 #include "cocos2d.h"
 
+#include "cocostudio/CCArmature.h"
+
+using namespace cocostudio;
+
+
+
 class HelloWorld : public cocos2d::Layer
 {
+private:
+    Armature* armature;
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -14,6 +22,8 @@ public:
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
+    
+    void playAnimationTest(float dt);
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);

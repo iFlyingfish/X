@@ -1,0 +1,789 @@
+{
+  "content_scale": 1.0,
+  "armature_data": [
+    {
+      "strVersion": "1.6.0.0",
+      "version": 1.6,
+      "name": "NewAnimation",
+      "bone_data": [
+        {
+          "name": "Layer46",
+          "parent": "",
+          "dI": 0,
+          "x": 8.4033403396606445,
+          "y": 155.18768310546875,
+          "z": 12,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -1.6142472,
+          "kY": 1.6142472,
+          "arrow_x": 38.691997528076172,
+          "arrow_y": -2.2261359845288098E-05,
+          "effectbyskeleton": true,
+          "bl": 38,
+          "display_data": [
+            {
+              "name": "FireStickMan/monster1_body.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 13.3596954,
+                  "y": -2.26312637,
+                  "cX": 1.0,
+                  "cY": 0.5,
+                  "kX": 3.18504429,
+                  "kY": 3.09814143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer47",
+          "parent": "Layer46",
+          "dI": 0,
+          "x": 23.543609619140625,
+          "y": -0.1825103759765625,
+          "z": 11,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -0.005290985,
+          "kY": 0.005290985,
+          "arrow_x": 34.494720458984375,
+          "arrow_y": -1.614724715182092E-05,
+          "effectbyskeleton": true,
+          "bl": 34,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_head.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 26.8179474,
+                  "y": -2.14952278,
+                  "cX": 0.9999999,
+                  "cY": 0.9999999,
+                  "kX": 1.61953819,
+                  "kY": -1.6195389
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer52",
+          "parent": "Layer46",
+          "dI": 0,
+          "x": 25.259292602539062,
+          "y": 0.5840301513671875,
+          "z": 3,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 2.249274,
+          "kY": -2.249274,
+          "arrow_x": 39.665283203125,
+          "arrow_y": -8.884817361831665E-07,
+          "effectbyskeleton": true,
+          "bl": 39,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_hand.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 21.7340851,
+                  "y": 2.51931763,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0507019758,
+                  "kY": -0.05070262
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer53",
+          "parent": "Layer52",
+          "dI": 0,
+          "x": 33.113716125488281,
+          "y": 0.391632080078125,
+          "z": 5,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 0.480668664,
+          "kY": -0.480668664,
+          "arrow_x": 43.971340179443359,
+          "arrow_y": -2.9687565984204412E-05,
+          "effectbyskeleton": true,
+          "bl": 43,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_hand.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 22.725235,
+                  "y": 3.9417038,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0405938625,
+                  "kY": -0.04059381
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer48",
+          "parent": "Layer46",
+          "dI": 0,
+          "x": 25.186203002929688,
+          "y": -1.0950565338134766,
+          "z": 2,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 4.246248,
+          "kY": -4.246248,
+          "arrow_x": 32.730018615722656,
+          "arrow_y": -2.0717561710625887E-06,
+          "effectbyskeleton": true,
+          "bl": 32,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_hand.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 17.4770355,
+                  "y": -0.593948364,
+                  "cX": 0.99999994,
+                  "cY": 0.99999994,
+                  "kX": 3.069633,
+                  "kY": -3.06963348
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer49",
+          "parent": "Layer48",
+          "dI": 0,
+          "x": 30.766654968261719,
+          "y": -1.79083251953125,
+          "z": 4,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -0.259413958,
+          "kY": 0.259413958,
+          "arrow_x": 36.251499176025391,
+          "arrow_y": 2.9898976208642125E-05,
+          "effectbyskeleton": true,
+          "bl": 36,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_hand.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 21.8026886,
+                  "y": 5.12879944,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.125856519,
+                  "kY": -0.125856549
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer51",
+          "parent": "Layer49",
+          "dI": 0,
+          "x": 33.310157775878906,
+          "y": -1.8310699462890625,
+          "z": 10,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -4.600569,
+          "kY": 4.600569,
+          "arrow_x": 171.9488525390625,
+          "arrow_y": -3.6660348996520042E-05,
+          "effectbyskeleton": true,
+          "bl": 171,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_weapon.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 87.66997,
+                  "y": -1.20225525,
+                  "cX": 0.99999994,
+                  "cY": 0.99999994,
+                  "kX": 1.65318573,
+                  "kY": -1.65318775
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer55",
+          "parent": "",
+          "dI": 0,
+          "x": 8.4033403396606445,
+          "y": 154.34735107421875,
+          "z": 1,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 1.50837755,
+          "kY": -1.50837755,
+          "arrow_x": 40.414829254150391,
+          "arrow_y": -6.6092052293242887E-06,
+          "effectbyskeleton": true,
+          "bl": 40,
+          "display_data": [
+            {
+              "name": "FireStickMan/monster1_body.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 21.9634552,
+                  "y": 1.15319061,
+                  "cX": 1.0,
+                  "cY": 0.5,
+                  "kX": 0.06241846,
+                  "kY": -0.06241893
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer57",
+          "parent": "Layer55",
+          "dI": 0,
+          "x": 31.975364685058594,
+          "y": -0.31451034545898438,
+          "z": 7,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -0.461500525,
+          "kY": 0.461500525,
+          "arrow_x": 43.6732292175293,
+          "arrow_y": 5.175743717700243E-05,
+          "effectbyskeleton": true,
+          "bl": 43,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_hand.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 25.1576843,
+                  "y": 3.5160675,
+                  "cX": 0.99999994,
+                  "cY": 0.99999994,
+                  "kX": -0.04293418,
+                  "kY": 0.04293448
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer59",
+          "parent": "Layer57",
+          "dI": 0,
+          "x": 39.194351196289062,
+          "y": 0.64676666259765625,
+          "z": 9,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 0.55169,
+          "kY": -0.55169,
+          "arrow_x": 30.263757705688477,
+          "arrow_y": -3.0147813959047198E-05,
+          "effectbyskeleton": true,
+          "bl": 30,
+          "display_data": [
+            {
+              "name": "FireStickMan/monster1_leg.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 19.1880569,
+                  "y": 3.13907623,
+                  "cX": 1.00000012,
+                  "cY": 1.00000012,
+                  "kX": 4.68461847,
+                  "kY": 1.59856713
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer56",
+          "parent": "Layer55",
+          "dI": 0,
+          "x": 37.793899536132812,
+          "y": -1.5201416015625,
+          "z": 6,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": 0.775479555,
+          "kY": -0.775479555,
+          "arrow_x": 41.107818603515625,
+          "arrow_y": -4.676345270127058E-06,
+          "effectbyskeleton": true,
+          "bl": 41,
+          "display_data": [
+            {
+              "name": "FireStickMan/hero1_hand.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 21.561615,
+                  "y": -1.12828827,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 3.12321234,
+                  "kY": -3.12321162
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layer58",
+          "parent": "Layer56",
+          "dI": 0,
+          "x": 32.089168548583984,
+          "y": -1.1337738037109375,
+          "z": 8,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -0.6417533,
+          "kY": 0.6417533,
+          "arrow_x": 35.384037017822266,
+          "arrow_y": 5.0982584070879966E-05,
+          "effectbyskeleton": true,
+          "bl": 35,
+          "display_data": [
+            {
+              "name": "FireStickMan/monster1_leg.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 23.5296021,
+                  "y": -0.00424385071,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 4.641082,
+                  "kY": 1.64210379
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animation_data": [
+    {
+      "name": "NewAnimation",
+      "mov_data": [
+        {
+          "name": "Walk",
+          "dr": 6,
+          "lp": false,
+          "to": 0,
+          "drTW": 0,
+          "twE": 0,
+          "sc": 1.0,
+          "mov_bone_data": [
+            {
+              "name": "Layer46",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer47",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer51",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer59",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -0.958257437,
+                  "kY": 0.958257437,
+                  "fi": 5,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer58",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.694905341,
+                  "kY": -0.694905341,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0413301475,
+                  "kY": -0.0413301475,
+                  "fi": 5,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer57",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer56",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer53",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer49",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.10530673,
+                  "kY": -0.10530673,
+                  "fi": 5,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer52",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 1.99638653,
+                  "kY": -1.99638653,
+                  "fi": 5,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer48",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.36615515,
+                  "kY": 2.36615515,
+                  "fi": 5,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            },
+            {
+              "name": "Layer55",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "texture_data": [
+    {
+      "name": "FireStickMan/hero1_head",
+      "width": 50.0,
+      "height": 50.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "FireStickMan/hero1_hand",
+      "width": 50.0,
+      "height": 50.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "FireStickMan/monster1_leg",
+      "width": 50.0,
+      "height": 50.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "FireStickMan/hero1_weapon",
+      "width": 41.0,
+      "height": 195.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "FireStickMan/monster1_body",
+      "width": 50.0,
+      "height": 50.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    }
+  ],
+  "config_file_path": [
+    "NewAnimation0.plist"
+  ],
+  "config_png_path": [
+    "NewAnimation0.png"
+  ]
+}
