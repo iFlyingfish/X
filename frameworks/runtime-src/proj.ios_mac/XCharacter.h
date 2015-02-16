@@ -31,7 +31,7 @@ public:
     
     XCharcterSprite* getCharacterSprtie();
     void setHP(int HP);
-    int getHP();
+    int getHP() const;
     
 protected:
 

@@ -50,7 +50,7 @@ void XCharacter::setHP(int HP)
     mHP = HP;
 }
 
-int XCharacter::getHP()
+int XCharacter::getHP() const
 {
     return mHP;
 }
