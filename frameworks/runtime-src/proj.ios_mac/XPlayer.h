@@ -10,29 +10,18 @@
 #define __X__XPlayer__
 
 #include <stdio.h>
-
-class XHallInfo;
-class XBattleInfo;
+#include "XCharacter.h"
 class XPlayerSprite;
 
-typedef enum
-{
-    stateHall = 0,       //大厅状态
-    stateBattle = 1,     //战斗状态
-    
-}State;
 
-class XPlayer
+class XPlayer : public XCharacter
 {
 public:
+    
     XPlayer(int battleHP);
     virtual ~XPlayer();
 private:
-    State mState;
-    XHallInfo* mHallInfo;
-    XBattleInfo* mBattleInfo;
-    XPlayerSprite* mPlayerSprite;
-    
+   
 };
 
 #endif /* defined(__X__XPlayer__) */

@@ -90,7 +90,7 @@ bool HelloWorld::init()
   //  armature->getAnimation()->play("Walk");
     this->addChild(armature);
     
-    this->schedule(schedule_selector(HelloWorld::playAnimationTest), 1.0f);
+    //this->schedule(schedule_selector(HelloWorld::playAnimationTest), 1.0f);
     return true;
 }
 
