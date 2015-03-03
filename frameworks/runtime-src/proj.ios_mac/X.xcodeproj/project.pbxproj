@@ -78,6 +78,11 @@
 		B3B4940D1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FD1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz */; };
 		B3B4940E1A6E486100207881 /* UI_Battle_xuanbase.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FE1A6E486100207881 /* UI_Battle_xuanbase.plist */; };
 		B3B4940F1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = B3B493FF1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz */; };
+		B3CF3BB81AA5F649004EF9C6 /* XStateBattleBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */; };
+		B3CF3BD31AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCB1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp */; };
+		B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCD1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp */; };
+		B3CF3BD51AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCF1AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp */; };
+		B3CF3BD61AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BD11AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp */; };
 		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -239,6 +244,16 @@
 		B3B493FD1A6E486100207881 /* UI_Battle_xuanbase-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UI_Battle_xuanbase-hd.pvr.ccz"; sourceTree = "<group>"; };
 		B3B493FE1A6E486100207881 /* UI_Battle_xuanbase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UI_Battle_xuanbase.plist; sourceTree = "<group>"; };
 		B3B493FF1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = UI_Battle_xuanbase.pvr.ccz; sourceTree = "<group>"; };
+		B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattleBase.cpp; sourceTree = "<group>"; };
+		B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattleBase.h; sourceTree = "<group>"; };
+		B3CF3BCB1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerAttack.cpp; sourceTree = "<group>"; };
+		B3CF3BCC1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattlePlayerAttack.h; sourceTree = "<group>"; };
+		B3CF3BCD1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerDefend.cpp; sourceTree = "<group>"; };
+		B3CF3BCE1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattlePlayerDefend.h; sourceTree = "<group>"; };
+		B3CF3BCF1AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerJump.cpp; sourceTree = "<group>"; };
+		B3CF3BD01AA5FBA6004EF9C6 /* XStateBattlePlayerJump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattlePlayerJump.h; sourceTree = "<group>"; };
+		B3CF3BD11AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerRun.cpp; sourceTree = "<group>"; };
+		B3CF3BD21AA5FBA6004EF9C6 /* XStateBattlePlayerRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattlePlayerRun.h; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -452,6 +467,21 @@
 			path = UI_Battle_xuanbase;
 			sourceTree = "<group>";
 		};
+		B3CF3BCA1AA5FBA6004EF9C6 /* XPlayerState */ = {
+			isa = PBXGroup;
+			children = (
+				B3CF3BCB1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp */,
+				B3CF3BCC1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.h */,
+				B3CF3BD11AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp */,
+				B3CF3BD21AA5FBA6004EF9C6 /* XStateBattlePlayerRun.h */,
+				B3CF3BCD1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp */,
+				B3CF3BCE1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.h */,
+				B3CF3BCF1AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp */,
+				B3CF3BD01AA5FBA6004EF9C6 /* XStateBattlePlayerJump.h */,
+			);
+			path = XPlayerState;
+			sourceTree = "<group>";
+		};
 		C03781AF18BF654500FE4F13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +565,9 @@
 				B38DA2281A919EFF001CEF54 /* XStateMachine.h */,
 				B38DA22C1A91CE3D001CEF54 /* XState.cpp */,
 				B38DA22D1A91CE3D001CEF54 /* XState.h */,
+				B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */,
+				B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */,
+				B3CF3BCA1AA5FBA6004EF9C6 /* XPlayerState */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -791,16 +824,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CF3BD51AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp in Sources */,
+				B3CF3BD61AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp in Sources */,
 				B38DA22E1A91CE3D001CEF54 /* XState.cpp in Sources */,
 				B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */,
 				B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
+				B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */,
 				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
 				B38DA2291A919EFF001CEF54 /* XStateMachine.cpp in Sources */,
 				B38DA2311A91D112001CEF54 /* XCharacter.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
+				B3CF3BB81AA5F649004EF9C6 /* XStateBattleBase.cpp in Sources */,
 				B3B493D71A6E34C300207881 /* HelloWorldScene.cpp in Sources */,
+				B3CF3BD31AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp in Sources */,
 				B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */,
 				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,

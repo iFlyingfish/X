@@ -27,7 +27,7 @@ public:
     virtual void exit(XCharacter* character) = 0;
     
     const std::string& getName() const;
-private:
+protected:
     std::string mName;
 };
 
