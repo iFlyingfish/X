@@ -22,9 +22,8 @@ public:
     XState(const std::string& name);
     virtual ~XState();
     
-    virtual void enter(XCharacter* character) = 0;
-    virtual void tick(XCharacter* character) = 0;
-    virtual void exit(XCharacter* character) = 0;
+    
+    
     
     const std::string& getName() const;
 protected:

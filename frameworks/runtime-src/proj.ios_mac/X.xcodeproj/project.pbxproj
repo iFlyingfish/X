@@ -57,6 +57,9 @@
 		B38DA2291A919EFF001CEF54 /* XStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38DA2271A919EFF001CEF54 /* XStateMachine.cpp */; };
 		B38DA22E1A91CE3D001CEF54 /* XState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38DA22C1A91CE3D001CEF54 /* XState.cpp */; };
 		B38DA2311A91D112001CEF54 /* XCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38DA22F1A91D112001CEF54 /* XCharacter.cpp */; };
+		B39324941AAC39C100F345AA /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39324901AAC39C100F345AA /* Joystick.cpp */; };
+		B39324951AAC39C100F345AA /* UIBattleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39324921AAC39C100F345AA /* UIBattleLayer.cpp */; };
+		B39324991AAC3A2D00F345AA /* XBattleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39324971AAC3A2D00F345AA /* XBattleScene.cpp */; };
 		B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D18E1A6CACD100815657 /* XPlayer.cpp */; };
 		B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */; };
 		B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */; };
@@ -219,6 +222,12 @@
 		B38DA22D1A91CE3D001CEF54 /* XState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XState.h; sourceTree = "<group>"; };
 		B38DA22F1A91D112001CEF54 /* XCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XCharacter.cpp; sourceTree = "<group>"; };
 		B38DA2301A91D112001CEF54 /* XCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCharacter.h; sourceTree = "<group>"; };
+		B39324901AAC39C100F345AA /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
+		B39324911AAC39C100F345AA /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		B39324921AAC39C100F345AA /* UIBattleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBattleLayer.cpp; sourceTree = "<group>"; };
+		B39324931AAC39C100F345AA /* UIBattleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBattleLayer.h; sourceTree = "<group>"; };
+		B39324971AAC3A2D00F345AA /* XBattleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBattleScene.cpp; sourceTree = "<group>"; };
+		B39324981AAC3A2D00F345AA /* XBattleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBattleScene.h; sourceTree = "<group>"; };
 		B3A6D18E1A6CACD100815657 /* XPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayer.cpp; sourceTree = "<group>"; };
 		B3A6D18F1A6CACD100815657 /* XPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayer.h; sourceTree = "<group>"; };
 		B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBattleInfo.cpp; sourceTree = "<group>"; };
@@ -412,6 +421,26 @@
 			path = NewAnimation;
 			sourceTree = "<group>";
 		};
+		B393248F1AAC39C100F345AA /* XUI */ = {
+			isa = PBXGroup;
+			children = (
+				B39324901AAC39C100F345AA /* Joystick.cpp */,
+				B39324911AAC39C100F345AA /* Joystick.h */,
+				B39324921AAC39C100F345AA /* UIBattleLayer.cpp */,
+				B39324931AAC39C100F345AA /* UIBattleLayer.h */,
+			);
+			path = XUI;
+			sourceTree = "<group>";
+		};
+		B39324961AAC3A0200F345AA /* XGameScene */ = {
+			isa = PBXGroup;
+			children = (
+				B39324971AAC3A2D00F345AA /* XBattleScene.cpp */,
+				B39324981AAC3A2D00F345AA /* XBattleScene.h */,
+			);
+			path = XGameScene;
+			sourceTree = "<group>";
+		};
 		B3B493EB1A6E486100207881 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,6 +596,8 @@
 				B38DA22D1A91CE3D001CEF54 /* XState.h */,
 				B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */,
 				B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */,
+				B39324961AAC3A0200F345AA /* XGameScene */,
+				B393248F1AAC39C100F345AA /* XUI */,
 				B3CF3BCA1AA5FBA6004EF9C6 /* XPlayerState */,
 			);
 			name = Classes;
@@ -825,6 +856,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3CF3BD51AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp in Sources */,
+				B39324941AAC39C100F345AA /* Joystick.cpp in Sources */,
 				B3CF3BD61AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp in Sources */,
 				B38DA22E1A91CE3D001CEF54 /* XState.cpp in Sources */,
 				B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */,
@@ -832,6 +864,7 @@
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */,
+				B39324951AAC39C100F345AA /* UIBattleLayer.cpp in Sources */,
 				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
 				B38DA2291A919EFF001CEF54 /* XStateMachine.cpp in Sources */,
 				B38DA2311A91D112001CEF54 /* XCharacter.cpp in Sources */,
@@ -839,6 +872,7 @@
 				B3CF3BB81AA5F649004EF9C6 /* XStateBattleBase.cpp in Sources */,
 				B3B493D71A6E34C300207881 /* HelloWorldScene.cpp in Sources */,
 				B3CF3BD31AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp in Sources */,
+				B39324991AAC3A2D00F345AA /* XBattleScene.cpp in Sources */,
 				B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */,
 				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
