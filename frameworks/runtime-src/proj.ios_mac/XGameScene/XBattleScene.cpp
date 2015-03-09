@@ -26,6 +26,8 @@ bool XBattleScene::init()
         uiBattleLayer = UIBattleLayer::create();
         uiBattleLayer->setPosition(Point::ZERO);
         this->addChild(uiBattleLayer);
+        
+        return true;
     }
     
     return false;

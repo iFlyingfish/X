@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "lua_module_register.h"
 #include "HelloWorldScene.h"
+#include "XBattleScene.h"
 
 using namespace CocosDenshion;
 
@@ -60,10 +61,12 @@ bool AppDelegate::applicationDidFinishLaunching()
     director->setAnimationInterval(1.0 / 60);
     
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    //auto scene = HelloWorld::createScene();
+    auto battleScene = XBattleScene::createScene();
     
     // run
-    director->runWithScene(scene);
+    //director->runWithScene(scene);
+    director->runWithScene(battleScene);
 
     return true;
 }

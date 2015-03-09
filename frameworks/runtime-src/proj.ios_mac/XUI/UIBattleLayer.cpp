@@ -21,6 +21,8 @@ bool UIBattleLayer::init()
         playerMoveStick = Joystick::create();
         this->addChild(playerMoveStick);
         playerMoveStick->setPosition(Point::ZERO);
+        
+        return true;
     }
     
     return false;

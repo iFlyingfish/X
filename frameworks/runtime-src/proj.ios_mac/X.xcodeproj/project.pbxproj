@@ -50,6 +50,8 @@
 		521A8E6B19F0C3AC00D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6919F0C3AC00D177D7 /* Default-736h@3x.png */; };
 		B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */; };
 		B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */; };
+		B3431D3E1AADE09F00609B22 /* joystick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B3431D3C1AADE09F00609B22 /* joystick_bg.png */; };
+		B3431D3F1AADE09F00609B22 /* joystick_center.png in Resources */ = {isa = PBXBuildFile; fileRef = B3431D3D1AADE09F00609B22 /* joystick_center.png */; };
 		B3643A621A6E006800BD8FD4 /* XTexturePacker.sh in Resources */ = {isa = PBXBuildFile; fileRef = B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */; };
 		B37A8C1C1A737A6F000F2FED /* NewAnimation.ExportJson in Resources */ = {isa = PBXBuildFile; fileRef = B37A8C191A737A6F000F2FED /* NewAnimation.ExportJson */; };
 		B37A8C1D1A737A6F000F2FED /* NewAnimation0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B37A8C1A1A737A6F000F2FED /* NewAnimation0.plist */; };
@@ -212,6 +214,8 @@
 		B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCharacterSprite.h; sourceTree = "<group>"; };
 		B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayerSprite.cpp; sourceTree = "<group>"; };
 		B33112E41A5BC0BD00AA6FA6 /* XPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayerSprite.h; sourceTree = "<group>"; };
+		B3431D3C1AADE09F00609B22 /* joystick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick_bg.png; sourceTree = "<group>"; };
+		B3431D3D1AADE09F00609B22 /* joystick_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick_center.png; sourceTree = "<group>"; };
 		B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = XTexturePacker.sh; sourceTree = "<group>"; };
 		B37A8C191A737A6F000F2FED /* NewAnimation.ExportJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewAnimation.ExportJson; sourceTree = "<group>"; };
 		B37A8C1A1A737A6F000F2FED /* NewAnimation0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewAnimation0.plist; sourceTree = "<group>"; };
@@ -444,6 +448,8 @@
 		B3B493EB1A6E486100207881 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B3431D3C1AADE09F00609B22 /* joystick_bg.png */,
+				B3431D3D1AADE09F00609B22 /* joystick_center.png */,
 				B3B493EC1A6E486100207881 /* UI_Battle_hunbase */,
 				B3B493F11A6E486100207881 /* UI_Battle_Public */,
 				B3B493F61A6E486100207881 /* UI_Battle_shangbase */,
@@ -784,6 +790,7 @@
 				B37A8C1E1A737A6F000F2FED /* NewAnimation0.png in Resources */,
 				5023811F17EBBCAC00990C9B /* Icon-152.png in Resources */,
 				5023812017EBBCAC00990C9B /* Icon-57.png in Resources */,
+				B3431D3E1AADE09F00609B22 /* joystick_bg.png in Resources */,
 				B3B494091A6E486100207881 /* UI_Battle_shangbase-hd.pvr.ccz in Resources */,
 				C03781B918BF655400FE4F13 /* res in Resources */,
 				B3B4940F1A6E486100207881 /* UI_Battle_xuanbase.pvr.ccz in Resources */,
@@ -798,6 +805,7 @@
 				B3B494051A6E486100207881 /* UI_Battle_Public-hd.pvr.ccz in Resources */,
 				B3B4940C1A6E486100207881 /* UI_Battle_xuanbase-hd.plist in Resources */,
 				5091733717ECE17A00D62437 /* Icon-40.png in Resources */,
+				B3431D3F1AADE09F00609B22 /* joystick_center.png in Resources */,
 				5023811E17EBBCAC00990C9B /* Icon-144.png in Resources */,
 				B3B494041A6E486100207881 /* UI_Battle_Public-hd.plist in Resources */,
 				B37A8C1C1A737A6F000F2FED /* NewAnimation.ExportJson in Resources */,
