@@ -65,6 +65,8 @@
 		B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D18E1A6CACD100815657 /* XPlayer.cpp */; };
 		B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1911A6CAE0500815657 /* XBattleInfo.cpp */; };
 		B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */; };
+		B3ADB65B1AAEE808008FAE77 /* XPlayerMoveButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3ADB6591AAEE808008FAE77 /* XPlayerMoveButton.cpp */; };
+		B3ADB65E1AAEEA0D008FAE77 /* XButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3ADB65C1AAEEA0D008FAE77 /* XButton.cpp */; };
 		B3B493D71A6E34C300207881 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3B493D51A6E34C300207881 /* HelloWorldScene.cpp */; };
 		B3B493E01A6E391900207881 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B493DF1A6E391900207881 /* HelloWorld.png */; };
 		B3B494001A6E486100207881 /* UI_Battle_hunbase-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3B493ED1A6E486100207881 /* UI_Battle_hunbase-hd.plist */; };
@@ -238,6 +240,10 @@
 		B3A6D1921A6CAE0500815657 /* XBattleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBattleInfo.h; sourceTree = "<group>"; };
 		B3A6D1941A6CAE5200815657 /* XHallInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHallInfo.cpp; sourceTree = "<group>"; };
 		B3A6D1951A6CAE5200815657 /* XHallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHallInfo.h; sourceTree = "<group>"; };
+		B3ADB6591AAEE808008FAE77 /* XPlayerMoveButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlayerMoveButton.cpp; sourceTree = "<group>"; };
+		B3ADB65A1AAEE808008FAE77 /* XPlayerMoveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayerMoveButton.h; sourceTree = "<group>"; };
+		B3ADB65C1AAEEA0D008FAE77 /* XButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XButton.cpp; sourceTree = "<group>"; };
+		B3ADB65D1AAEEA0D008FAE77 /* XButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XButton.h; sourceTree = "<group>"; };
 		B3B493D51A6E34C300207881 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		B3B493D61A6E34C300207881 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		B3B493DF1A6E391900207881 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HelloWorld.png; path = ../../../HelloWorld.png; sourceTree = "<group>"; };
@@ -432,6 +438,10 @@
 				B39324911AAC39C100F345AA /* Joystick.h */,
 				B39324921AAC39C100F345AA /* UIBattleLayer.cpp */,
 				B39324931AAC39C100F345AA /* UIBattleLayer.h */,
+				B3ADB65C1AAEEA0D008FAE77 /* XButton.cpp */,
+				B3ADB65D1AAEEA0D008FAE77 /* XButton.h */,
+				B3ADB6591AAEE808008FAE77 /* XPlayerMoveButton.cpp */,
+				B3ADB65A1AAEE808008FAE77 /* XPlayerMoveButton.h */,
 			);
 			path = XUI;
 			sourceTree = "<group>";
@@ -875,6 +885,7 @@
 				B39324951AAC39C100F345AA /* UIBattleLayer.cpp in Sources */,
 				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
 				B38DA2291A919EFF001CEF54 /* XStateMachine.cpp in Sources */,
+				B3ADB65E1AAEEA0D008FAE77 /* XButton.cpp in Sources */,
 				B38DA2311A91D112001CEF54 /* XCharacter.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				B3CF3BB81AA5F649004EF9C6 /* XStateBattleBase.cpp in Sources */,
@@ -883,6 +894,7 @@
 				B39324991AAC3A2D00F345AA /* XBattleScene.cpp in Sources */,
 				B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */,
 				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
+				B3ADB65B1AAEE808008FAE77 /* XPlayerMoveButton.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
