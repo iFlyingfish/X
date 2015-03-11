@@ -10,12 +10,12 @@
 
 XButton::XButton(void)
 {
-    eventDispatcher = Director::getInstance()->getEventDispatcher();
+    
 }
 
 XButton::~XButton(void)
 {
-    eventDispatcher = nullptr;
+
 }
 
 // MARK: create, init
@@ -144,6 +144,20 @@ bool XButton::initWithFile(const std::string& filename, const Rect& rect)
 bool XButton::initWithTexture(Texture2D *texture, const Rect& rect, bool rotated)
 {
     return Sprite::initWithTexture(texture, rect, rotated);
+}
+
+void XButton::registerTouchListener()
+{
+    EventDispatcher* eventDptr = getEventDispatcher();
+    
+    if (eventDptr) {
+        auto listener = EventListenerTouchOneByOne::create();
+        listener->setSwallowTouches(true);
+        
+        listener->onTouchBegan = [](Touch* touch, Event* event){
+            return true;
+        };
+    }
 }
 
 

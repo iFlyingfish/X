@@ -28,8 +28,6 @@ public:
     
 protected:
     
-    EventDispatcher* eventDispatcher;
-    
     XButton(void);
     virtual ~XButton(void);
     
@@ -42,7 +40,7 @@ protected:
     virtual bool initWithFile(const std::string& filename);
     virtual bool initWithFile(const std::string& filename, const Rect& rect);
     
-    
+    virtual void registerTouchListener();
 };
 
 #endif /* defined(__X__XButton__) */
