@@ -57,9 +57,12 @@ void XPlayerMoveButton::registerTouchListener()
         listener->setSwallowTouches(true);
         
         listener->onTouchBegan = CC_CALLBACK_2(XPlayerMoveButton::onTouchBegan, this);
+        
         listener->onTouchMoved = CC_CALLBACK_2(XPlayerMoveButton::onTouchMoved, this);
         listener->onTouchEnded = CC_CALLBACK_2(XPlayerMoveButton::onTouchEnded, this);
         listener->onTouchCancelled = CC_CALLBACK_2(XPlayerMoveButton::onTouchCanceled, this);
+        
+        eventDptr->addEventListenerWithSceneGraphPriority(listener, this);
     }
 }
 

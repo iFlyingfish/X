@@ -158,6 +158,8 @@ void XButton::registerTouchListener()
         listener->onTouchMoved = CC_CALLBACK_2(XButton::onTouchMoved, this);
         listener->onTouchEnded = CC_CALLBACK_2(XButton::onTouchEnded, this);
         listener->onTouchCancelled = CC_CALLBACK_2(XButton::onTouchCanceled, this);
+        
+        eventDptr->addEventListenerWithSceneGraphPriority(listener, this);
     }
 }
 

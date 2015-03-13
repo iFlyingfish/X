@@ -11,7 +11,8 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
-class Joystick;
+//class Joystick;
+class XPlayerMoveButton;
 
 using namespace cocos2d;
 
@@ -26,7 +27,9 @@ public:
 private:
     
     Menu* playerACtionBtnMenu;
-    Joystick* playerMoveStick;
+//    Joystick* playerMoveStick;
+    XPlayerMoveButton* playerMoveBtn;
+
 };
 
 #endif /* defined(__X__UIBattleLayer__) */
