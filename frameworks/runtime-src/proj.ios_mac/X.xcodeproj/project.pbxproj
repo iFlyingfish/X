@@ -53,6 +53,7 @@
 		B3431D3E1AADE09F00609B22 /* joystick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B3431D3C1AADE09F00609B22 /* joystick_bg.png */; };
 		B3431D3F1AADE09F00609B22 /* joystick_center.png in Resources */ = {isa = PBXBuildFile; fileRef = B3431D3D1AADE09F00609B22 /* joystick_center.png */; };
 		B3643A621A6E006800BD8FD4 /* XTexturePacker.sh in Resources */ = {isa = PBXBuildFile; fileRef = B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */; };
+		B37273AD1AB2F1CF002FC667 /* XMessagePool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37273AB1AB2F1CF002FC667 /* XMessagePool.cpp */; };
 		B37A8C1C1A737A6F000F2FED /* NewAnimation.ExportJson in Resources */ = {isa = PBXBuildFile; fileRef = B37A8C191A737A6F000F2FED /* NewAnimation.ExportJson */; };
 		B37A8C1D1A737A6F000F2FED /* NewAnimation0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B37A8C1A1A737A6F000F2FED /* NewAnimation0.plist */; };
 		B37A8C1E1A737A6F000F2FED /* NewAnimation0.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A8C1B1A737A6F000F2FED /* NewAnimation0.png */; };
@@ -219,6 +220,8 @@
 		B3431D3C1AADE09F00609B22 /* joystick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick_bg.png; sourceTree = "<group>"; };
 		B3431D3D1AADE09F00609B22 /* joystick_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick_center.png; sourceTree = "<group>"; };
 		B3643A611A6E006800BD8FD4 /* XTexturePacker.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = XTexturePacker.sh; sourceTree = "<group>"; };
+		B37273AB1AB2F1CF002FC667 /* XMessagePool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMessagePool.cpp; sourceTree = "<group>"; };
+		B37273AC1AB2F1CF002FC667 /* XMessagePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMessagePool.h; sourceTree = "<group>"; };
 		B37A8C191A737A6F000F2FED /* NewAnimation.ExportJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewAnimation.ExportJson; sourceTree = "<group>"; };
 		B37A8C1A1A737A6F000F2FED /* NewAnimation0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewAnimation0.plist; sourceTree = "<group>"; };
 		B37A8C1B1A737A6F000F2FED /* NewAnimation0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewAnimation0.png; sourceTree = "<group>"; };
@@ -410,6 +413,23 @@
 				B3B493EB1A6E486100207881 /* UI */,
 			);
 			path = Cooked;
+			sourceTree = "<group>";
+		};
+		B37273A21AB2DC02002FC667 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				B37273AA1AB2F1CF002FC667 /* MessageManage */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		B37273AA1AB2F1CF002FC667 /* MessageManage */ = {
+			isa = PBXGroup;
+			children = (
+				B37273AB1AB2F1CF002FC667 /* XMessagePool.cpp */,
+				B37273AC1AB2F1CF002FC667 /* XMessagePool.h */,
+			);
+			path = MessageManage;
 			sourceTree = "<group>";
 		};
 		B37A8C171A737A6F000F2FED /* Animate */ = {
@@ -614,6 +634,7 @@
 				B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */,
 				B39324961AAC3A0200F345AA /* XGameScene */,
 				B393248F1AAC39C100F345AA /* XUI */,
+				B37273A21AB2DC02002FC667 /* Singleton */,
 				B3CF3BCA1AA5FBA6004EF9C6 /* XPlayerState */,
 			);
 			name = Classes;
@@ -873,6 +894,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37273AD1AB2F1CF002FC667 /* XMessagePool.cpp in Sources */,
 				B3CF3BD51AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp in Sources */,
 				B39324941AAC39C100F345AA /* Joystick.cpp in Sources */,
 				B3CF3BD61AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp in Sources */,

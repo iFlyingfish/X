@@ -8,15 +8,15 @@
 
 #include "XButton.h"
 
-XButton::XButton(void)
-{
-    
-}
-
-XButton::~XButton(void)
-{
-
-}
+//XButton::XButton(void)
+//{
+//    
+//}
+//
+//XButton::~XButton(void)
+//{
+//
+//}
 
 // MARK: create, init
 
@@ -33,7 +33,7 @@ XButton* XButton::create()
 
 XButton* XButton::create(const std::string& filename)
 {
-    XButton *button = new (std::nothrow) XButton();
+    XButton* button = new (std::nothrow) XButton();
     if (button && button->initWithFile(filename))
     {
         button->autorelease();
@@ -154,10 +154,40 @@ void XButton::registerTouchListener()
         auto listener = EventListenerTouchOneByOne::create();
         listener->setSwallowTouches(true);
         
-        listener->onTouchBegan = [](Touch* touch, Event* event){
-            return true;
-        };
+        listener->onTouchBegan = CC_CALLBACK_2(XButton::onTouchBegan, this);
+        listener->onTouchMoved = CC_CALLBACK_2(XButton::onTouchMoved, this);
+        listener->onTouchEnded = CC_CALLBACK_2(XButton::onTouchEnded, this);
+        listener->onTouchCancelled = CC_CALLBACK_2(XButton::onTouchCanceled, this);
     }
+}
+
+bool XButton::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event)
+{
+    auto target = static_cast<XButton*>(event->getCurrentTarget());
+    
+    Point locationInNode = target->convertToNodeSpace(touch->getLocation());
+    Rect rect = Rect(0, 0, target->getContentSize().width, target->getContentSize().height);
+    
+    if (rect.containsPoint(locationInNode)) {
+        return true;
+    }
+    
+    return false;
+}
+
+void XButton::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event)
+{
+    
+}
+
+void XButton::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event)
+{
+    
+}
+
+void XButton::onTouchCanceled(cocos2d::Touch *touch, cocos2d::Event *event)
+{
+    
 }
 
 

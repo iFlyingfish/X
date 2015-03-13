@@ -26,10 +26,17 @@ public:
     static XButton* createWithSpriteFrame(SpriteFrame* spriteFrame);
     static XButton* createWithSpriteFrameName(const std::string& spriteFrameName);
     
+    virtual void registerTouchListener();
+    
+    virtual bool onTouchBegan(Touch* touch, Event* event);
+    virtual void onTouchMoved(Touch* touch, Event* event);
+    virtual void onTouchEnded(Touch* touch, Event* event);
+    virtual void onTouchCanceled(Touch* touch, Event* event);
+    
 protected:
     
-    XButton(void);
-    virtual ~XButton(void);
+//    XButton(void);
+//    virtual ~XButton(void);
     
     virtual bool init(void);
     virtual bool initWithTexture(Texture2D* texture);
@@ -40,7 +47,6 @@ protected:
     virtual bool initWithFile(const std::string& filename);
     virtual bool initWithFile(const std::string& filename, const Rect& rect);
     
-    virtual void registerTouchListener();
 };
 
 #endif /* defined(__X__XButton__) */
