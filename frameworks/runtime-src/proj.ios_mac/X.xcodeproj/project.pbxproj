@@ -94,6 +94,7 @@
 		B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCD1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp */; };
 		B3CF3BD51AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCF1AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp */; };
 		B3CF3BD61AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BD11AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp */; };
+		B3D15DCB1AB7D0E1007BA0D3 /* SocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3D15DC91AB7D0E1007BA0D3 /* SocketManager.cpp */; };
 		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -282,6 +283,8 @@
 		B3CF3BD01AA5FBA6004EF9C6 /* XStateBattlePlayerJump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattlePlayerJump.h; sourceTree = "<group>"; };
 		B3CF3BD11AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerRun.cpp; sourceTree = "<group>"; };
 		B3CF3BD21AA5FBA6004EF9C6 /* XStateBattlePlayerRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattlePlayerRun.h; sourceTree = "<group>"; };
+		B3D15DC91AB7D0E1007BA0D3 /* SocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketManager.cpp; sourceTree = "<group>"; };
+		B3D15DCA1AB7D0E1007BA0D3 /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -564,6 +567,15 @@
 			path = XPlayerState;
 			sourceTree = "<group>";
 		};
+		B3D15DC81AB7D0C9007BA0D3 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B3D15DC91AB7D0E1007BA0D3 /* SocketManager.cpp */,
+				B3D15DCA1AB7D0E1007BA0D3 /* SocketManager.h */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		C03781AF18BF654500FE4F13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -649,6 +661,7 @@
 				B38DA22D1A91CE3D001CEF54 /* XState.h */,
 				B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */,
 				B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */,
+				B3D15DC81AB7D0C9007BA0D3 /* NetWork */,
 				B39324961AAC3A0200F345AA /* XGameScene */,
 				B393248F1AAC39C100F345AA /* XUI */,
 				B37273A21AB2DC02002FC667 /* Singleton */,
@@ -935,6 +948,7 @@
 				B3CF3BD31AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp in Sources */,
 				B39324991AAC3A2D00F345AA /* XBattleScene.cpp in Sources */,
 				B3A6D1901A6CACD100815657 /* XPlayer.cpp in Sources */,
+				B3D15DCB1AB7D0E1007BA0D3 /* SocketManager.cpp in Sources */,
 				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
 				B3ADB65B1AAEE808008FAE77 /* XPlayerMoveButton.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,

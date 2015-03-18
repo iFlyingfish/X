@@ -6,6 +6,8 @@
 #include "HelloWorldScene.h"
 #include "XBattleScene.h"
 
+#include "SocketManager.h"
+
 using namespace CocosDenshion;
 
 USING_NS_CC;
@@ -59,6 +61,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
+    
+    
+    //test socket connect
+    SocketManager::getInstance()->connectToServerTest();
     
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
