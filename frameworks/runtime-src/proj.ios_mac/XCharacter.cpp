@@ -54,3 +54,37 @@ int XCharacter::getHP() const
 {
     return mHP;
 }
+
+void XCharacter::receiveMessage(const XMessage &message)
+{
+    mReceivedMessageList->push_back(message);
+}
+
+void XCharacter::cleanupMessage(const XMessage &message)
+{
+    XMessageListLtr itr = mReceivedMessageList->begin();
+    
+    while (itr != mReceivedMessageList->end()) {
+        if (itr->mMessageType == message.mMessageType) {
+            break;
+        }
+        ++itr;
+    }
+    
+    mReceivedMessageList->erase(itr);
+}
+
+bool XCharacter::isReceivedMessage(const XMessage &message) const
+{
+    XMessageListLtr itr = mReceivedMessageList->begin();
+    
+    while (itr != mReceivedMessageList->end()) {
+        if (itr->mMessageType == message.mMessageType) {
+            return true;
+        }
+        ++itr;
+    }
+    
+    return false;
+
+}

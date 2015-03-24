@@ -89,6 +89,8 @@
 		B3BFE5641AB3642E00D1357E /* TongBase.ExportJson in Resources */ = {isa = PBXBuildFile; fileRef = B3BFE5611AB3642E00D1357E /* TongBase.ExportJson */; };
 		B3BFE5651AB3642E00D1357E /* TongBase0.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3BFE5621AB3642E00D1357E /* TongBase0.plist */; };
 		B3BFE5661AB3642E00D1357E /* TongBase0.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFE5631AB3642E00D1357E /* TongBase0.png */; };
+		B3C0695C1AC1E63A003706F4 /* XTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C0695A1AC1E63A003706F4 /* XTransition.cpp */; };
+		B3C0695F1AC1E7A5003706F4 /* XTransitionMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C0695D1AC1E7A5003706F4 /* XTransitionMessage.cpp */; };
 		B3CF3BB81AA5F649004EF9C6 /* XStateBattleBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */; };
 		B3CF3BD31AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCB1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp */; };
 		B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3CF3BCD1AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp */; };
@@ -274,6 +276,10 @@
 		B3BFE5621AB3642E00D1357E /* TongBase0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TongBase0.plist; sourceTree = "<group>"; };
 		B3BFE5631AB3642E00D1357E /* TongBase0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TongBase0.png; sourceTree = "<group>"; };
 		B3C069591AC1E098003706F4 /* XMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMessage.h; sourceTree = "<group>"; };
+		B3C0695A1AC1E63A003706F4 /* XTransition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XTransition.cpp; sourceTree = "<group>"; };
+		B3C0695B1AC1E63A003706F4 /* XTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTransition.h; sourceTree = "<group>"; };
+		B3C0695D1AC1E7A5003706F4 /* XTransitionMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XTransitionMessage.cpp; sourceTree = "<group>"; };
+		B3C0695E1AC1E7A5003706F4 /* XTransitionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTransitionMessage.h; sourceTree = "<group>"; };
 		B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattleBase.cpp; sourceTree = "<group>"; };
 		B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattleBase.h; sourceTree = "<group>"; };
 		B3CF3BCB1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerAttack.cpp; sourceTree = "<group>"; };
@@ -659,6 +665,10 @@
 				B3A6D1951A6CAE5200815657 /* XHallInfo.h */,
 				B38DA2271A919EFF001CEF54 /* XStateMachine.cpp */,
 				B38DA2281A919EFF001CEF54 /* XStateMachine.h */,
+				B3C0695A1AC1E63A003706F4 /* XTransition.cpp */,
+				B3C0695B1AC1E63A003706F4 /* XTransition.h */,
+				B3C0695D1AC1E7A5003706F4 /* XTransitionMessage.cpp */,
+				B3C0695E1AC1E7A5003706F4 /* XTransitionMessage.h */,
 				B38DA22C1A91CE3D001CEF54 /* XState.cpp */,
 				B38DA22D1A91CE3D001CEF54 /* XState.h */,
 				B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */,
@@ -933,9 +943,11 @@
 				B3CF3BD51AA5FBA6004EF9C6 /* XStateBattlePlayerJump.cpp in Sources */,
 				B39324941AAC39C100F345AA /* Joystick.cpp in Sources */,
 				B3CF3BD61AA5FBA6004EF9C6 /* XStateBattlePlayerRun.cpp in Sources */,
+				B3C0695F1AC1E7A5003706F4 /* XTransitionMessage.cpp in Sources */,
 				B38DA22E1A91CE3D001CEF54 /* XState.cpp in Sources */,
 				B3A6D1931A6CAE0500815657 /* XBattleInfo.cpp in Sources */,
 				B33112E21A5BBAB800AA6FA6 /* XCharacterSprite.cpp in Sources */,
+				B3C0695C1AC1E63A003706F4 /* XTransition.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */,

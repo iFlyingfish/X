@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <list>
+#include <XMessage.h>
 
 class XCharcterSprite;
 class XStateMachine;
@@ -33,11 +34,17 @@ public:
     void setHP(int HP);
     int getHP() const;
     
+    void receiveMessage(const XMessage& message);
+    void cleanupMessage(const XMessage& message);
+    bool isReceivedMessage(const XMessage& message) const;
+    
 protected:
 
     XStateMachineList mStateMachineList;
     
     XCharcterSprite* mCharcterSprite;
+    
+    XMessageList* mReceivedMessageList;
     
     int mHP;
 };

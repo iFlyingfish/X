@@ -19,4 +19,18 @@ typedef enum
     XMessageTypeCharacterMoveRight
 } XMessageType;
 
+typedef struct XMessage
+{
+public:
+    XMessage(XMessageType messageType)
+    :mMessageType(mMessageType)
+    {
+    
+    }
+    XMessageType mMessageType;
+}XMessage;
+
+typedef std::list<XMessage> XMessageList;
+typedef std::list<XMessage>::iterator XMessageListLtr;
+
 #endif
