@@ -273,6 +273,7 @@
 		B3BFE5611AB3642E00D1357E /* TongBase.ExportJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TongBase.ExportJson; sourceTree = "<group>"; };
 		B3BFE5621AB3642E00D1357E /* TongBase0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TongBase0.plist; sourceTree = "<group>"; };
 		B3BFE5631AB3642E00D1357E /* TongBase0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TongBase0.png; sourceTree = "<group>"; };
+		B3C069591AC1E098003706F4 /* XMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMessage.h; sourceTree = "<group>"; };
 		B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattleBase.cpp; sourceTree = "<group>"; };
 		B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStateBattleBase.h; sourceTree = "<group>"; };
 		B3CF3BCB1AA5FBA6004EF9C6 /* XStateBattlePlayerAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XStateBattlePlayerAttack.cpp; sourceTree = "<group>"; };
@@ -643,6 +644,7 @@
 				F293BB7F15EB831F00256477 /* AppDelegate.h */,
 				B3B493D51A6E34C300207881 /* HelloWorldScene.cpp */,
 				B3B493D61A6E34C300207881 /* HelloWorldScene.h */,
+				B3C069591AC1E098003706F4 /* XMessage.h */,
 				B33112E01A5BBAB800AA6FA6 /* XCharacterSprite.cpp */,
 				B33112E11A5BBAB800AA6FA6 /* XCharacterSprite.h */,
 				B33112E31A5BC0BD00AA6FA6 /* XPlayerSprite.cpp */,
