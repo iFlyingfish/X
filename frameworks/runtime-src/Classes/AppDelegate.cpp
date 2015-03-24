@@ -64,7 +64,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     
     //test socket connect
-    SocketManager::getInstance()->connectToServerTest();
+   // SocketManager::getInstance()->connectToServerTest();
     
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
