@@ -60,6 +60,8 @@
 		B38DA2291A919EFF001CEF54 /* XStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38DA2271A919EFF001CEF54 /* XStateMachine.cpp */; };
 		B38DA22E1A91CE3D001CEF54 /* XState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38DA22C1A91CE3D001CEF54 /* XState.cpp */; };
 		B38DA2311A91D112001CEF54 /* XCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38DA22F1A91D112001CEF54 /* XCharacter.cpp */; };
+		B39205B11AD1030000EB8A67 /* XStateBattleHeroIdle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39205AF1AD1030000EB8A67 /* XStateBattleHeroIdle.cpp */; };
+		B39205BA1AD1053300EB8A67 /* XStateBattleHeroRun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39205B81AD1053300EB8A67 /* XStateBattleHeroRun.cpp */; };
 		B39324941AAC39C100F345AA /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39324901AAC39C100F345AA /* Joystick.cpp */; };
 		B39324951AAC39C100F345AA /* UIBattleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39324921AAC39C100F345AA /* UIBattleLayer.cpp */; };
 		B39324991AAC3A2D00F345AA /* XBattleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B39324971AAC3A2D00F345AA /* XBattleScene.cpp */; };
@@ -237,6 +239,10 @@
 		B38DA22D1A91CE3D001CEF54 /* XState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XState.h; sourceTree = "<group>"; };
 		B38DA22F1A91D112001CEF54 /* XCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XCharacter.cpp; sourceTree = "<group>"; };
 		B38DA2301A91D112001CEF54 /* XCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCharacter.h; sourceTree = "<group>"; };
+		B39205AF1AD1030000EB8A67 /* XStateBattleHeroIdle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XStateBattleHeroIdle.cpp; path = XPlayerState/XStateBattleHeroIdle.cpp; sourceTree = "<group>"; };
+		B39205B01AD1030000EB8A67 /* XStateBattleHeroIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XStateBattleHeroIdle.h; path = XPlayerState/XStateBattleHeroIdle.h; sourceTree = "<group>"; };
+		B39205B81AD1053300EB8A67 /* XStateBattleHeroRun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XStateBattleHeroRun.cpp; path = XPlayerState/XStateBattleHeroRun.cpp; sourceTree = "<group>"; };
+		B39205B91AD1053300EB8A67 /* XStateBattleHeroRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XStateBattleHeroRun.h; path = XPlayerState/XStateBattleHeroRun.h; sourceTree = "<group>"; };
 		B39324901AAC39C100F345AA /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
 		B39324911AAC39C100F345AA /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		B39324921AAC39C100F345AA /* UIBattleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBattleLayer.cpp; sourceTree = "<group>"; };
@@ -673,6 +679,10 @@
 				B38DA22D1A91CE3D001CEF54 /* XState.h */,
 				B3CF3BB61AA5F649004EF9C6 /* XStateBattleBase.cpp */,
 				B3CF3BB71AA5F649004EF9C6 /* XStateBattleBase.h */,
+				B39205AF1AD1030000EB8A67 /* XStateBattleHeroIdle.cpp */,
+				B39205B01AD1030000EB8A67 /* XStateBattleHeroIdle.h */,
+				B39205B81AD1053300EB8A67 /* XStateBattleHeroRun.cpp */,
+				B39205B91AD1053300EB8A67 /* XStateBattleHeroRun.h */,
 				B3D15DC81AB7D0C9007BA0D3 /* NetWork */,
 				B39324961AAC3A0200F345AA /* XGameScene */,
 				B393248F1AAC39C100F345AA /* XUI */,
@@ -953,6 +963,7 @@
 				B3CF3BD41AA5FBA6004EF9C6 /* XStateBattlePlayerDefend.cpp in Sources */,
 				B39324951AAC39C100F345AA /* UIBattleLayer.cpp in Sources */,
 				B33112E51A5BC0BD00AA6FA6 /* XPlayerSprite.cpp in Sources */,
+				B39205B11AD1030000EB8A67 /* XStateBattleHeroIdle.cpp in Sources */,
 				B38DA2291A919EFF001CEF54 /* XStateMachine.cpp in Sources */,
 				B3ADB65E1AAEEA0D008FAE77 /* XButton.cpp in Sources */,
 				B38DA2311A91D112001CEF54 /* XCharacter.cpp in Sources */,
@@ -965,6 +976,7 @@
 				B3D15DCB1AB7D0E1007BA0D3 /* SocketManager.cpp in Sources */,
 				B3A6D1961A6CAE5200815657 /* XHallInfo.cpp in Sources */,
 				B3ADB65B1AAEE808008FAE77 /* XPlayerMoveButton.cpp in Sources */,
+				B39205BA1AD1053300EB8A67 /* XStateBattleHeroRun.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

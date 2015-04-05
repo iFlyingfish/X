@@ -12,7 +12,7 @@ Scene* HelloWorld::createScene()
     
     // 'layer' is an autorelease object
     auto layer = HelloWorld::create();
-
+   
     // add layer as a child to scene
     scene->addChild(layer);
 
@@ -91,7 +91,34 @@ bool HelloWorld::init()
     this->addChild(armature);
     
     //this->schedule(schedule_selector(HelloWorld::playAnimationTest), 1.0f);
+    
+ 
+
     return true;
+}
+
+void HelloWorld::test1(float duration)
+{
+    stopAllActions();
+    CCLOG("test1");
+    auto dt = DelayTime::create(duration);
+    auto cf = CallFunc::create(CC_CALLBACK_0(HelloWorld::test2, this));
+    auto cf2 = CallFunc::create(CC_CALLBACK_0(HelloWorld::test1, this, arc4random()%5));
+    auto seq = Sequence::create(dt,cf,cf2, nullptr);
+    runAction(seq);
+}
+
+void HelloWorld::test2()
+{
+    
+    CCLOG("test2");
+
+
+}
+
+void HelloWorld::testFunc()
+{
+    CCLOG("testDelegate");
 }
 
 void HelloWorld::playAnimationTest(float dt)

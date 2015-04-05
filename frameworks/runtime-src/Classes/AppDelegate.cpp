@@ -67,13 +67,15 @@ bool AppDelegate::applicationDidFinishLaunching()
    // SocketManager::getInstance()->connectToServerTest();
     
     // create a scene. it's an autorelease object
-    //auto scene = HelloWorld::createScene();
+  //  auto scene = HelloWorld::createScene();
     auto battleScene = XBattleScene::createScene();
     
     // run
     //director->runWithScene(scene);
     director->runWithScene(battleScene);
 
+    
+    
     return true;
 }
 

@@ -7,9 +7,13 @@
 
 using namespace cocostudio;
 
+class testDelegate
+{
+public:
+    virtual void testFunc() = 0;
+};
 
-
-class HelloWorld : public cocos2d::Layer
+class HelloWorld : public cocos2d::Layer, public testDelegate
 {
 private:
     Armature* armature;
@@ -27,6 +31,10 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    void test1(float duration);
+    void test2();
+    void testFunc();
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -10,6 +10,7 @@
 
 #include "XBattleScene.h"
 #include "UIBattleLayer.h"
+#include "XPlayer.h"
 
 Scene* XBattleScene::createScene()
 {
@@ -29,27 +30,50 @@ bool XBattleScene::init()
         LayerColor* bgColorLayer = LayerColor::create(Color4B(255, 255, 255, 255));
         this->addChild(bgColorLayer);
         
-        ArmatureDataManager::getInstance()->addArmatureFileInfo("TongBase0.png","TongBase0.plist","TongBase.ExportJson");
-        armaturePlayer = Armature::create("TongBase");
-        armaturePlayer->retain();
-        
+//        ArmatureDataManager::getInstance()->addArmatureFileInfo("TongBase0.png","TongBase0.plist","TongBase.ExportJson");
+//        armaturePlayer = Armature::create("TongBase");
+//        armaturePlayer->retain();
+//        
         Size visableSize = Director::getInstance()->getVisibleSize();
+//
+//        armaturePlayer->setPosition(Point(visableSize.width * 0.5f, visableSize.height * 0.5f));
+//        this->addChild(armaturePlayer);
+//        
+//        lastDirec = XCharacterMoveDirectionStatic;
+//        
+//        scheduleUpdate();
         
-        armaturePlayer->setPosition(Point(visableSize.width * 0.5f, visableSize.height * 0.5f));
-        this->addChild(armaturePlayer);
+        mHero = new XPlayer(nullptr,100);
+        if (mHero->init()) {
+            
+            Armature* armaturePlayer = mHero->getArmaturePlayer();
+            armaturePlayer->setPosition(Point(visableSize.width * 0.5f, visableSize.height * 0.5f));
+            addChild(armaturePlayer);
+            
+            mHero->setupStateMachine();
+            mHero->firstEnter();
+            
+            uiBattleLayer = UIBattleLayer::create();
+            uiBattleLayer->setPosition(Point::ZERO);
+            this->addChild(uiBattleLayer);
+            
+            schedule(schedule_selector(XBattleScene::tick));
+            
+        }
         
-        lastDirec = XCharacterMoveDirectionStatic;
-        
-        scheduleUpdate();
-        
-        uiBattleLayer = UIBattleLayer::create();
-        uiBattleLayer->setPosition(Point::ZERO);
-        this->addChild(uiBattleLayer);
         
         return true;
     }
     
     return false;
+}
+
+void XBattleScene::tick(float dt)
+{
+    if (mHero) {
+        mHero->tick(dt);
+    }
+  
 }
 
 void XBattleScene::update(float dt)

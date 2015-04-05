@@ -25,3 +25,18 @@ const std::string& XState::getName() const
     return mName;
 }
 
+void XState::addTransition(XTransition* transition)
+{
+    for (auto transRecord : mTransitionVector) {
+        if (transition == transRecord) {
+            return;
+        }
+    }
+    mTransitionVector.push_back(transition);
+}
+
+const XState::TransitionVector& XState::getTransitions() const
+{
+    return mTransitionVector;
+}
+

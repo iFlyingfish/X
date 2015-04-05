@@ -11,19 +11,24 @@
 
 #include <list>
 
-typedef enum
+#define XHeroRunLeft "hero_run_left"
+#define XHeroRunRight "hero_run_right"
+#define XHeroRunStop "hero_run_stop"
+
+enum class XMessageType
 {
     XMessageTypeDefault = 0,
     XMessageTypeCharacterAttack,
     XMessageTypeCharacterMoveLeft,
-    XMessageTypeCharacterMoveRight
-} XMessageType;
+    XMessageTypeCharacterMoveRight,
+    XMessageTypeCharacterStop
+};
 
 typedef struct XMessage
 {
 public:
     XMessage(XMessageType messageType)
-    :mMessageType(mMessageType)
+    :mMessageType(messageType)
     {
     
     }

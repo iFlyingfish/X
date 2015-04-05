@@ -10,7 +10,7 @@
 #include "XCharacter.h"
 
 XTransitionMessage::XTransitionMessage(XMessageType messageType)
-:mMessageType(mMessageType)
+:mMessageType(messageType)
 {
     
 }
@@ -28,6 +28,20 @@ bool XTransitionMessage::isMeetCondition(XCharacter *character)
     
     XMessage message = XMessage(mMessageType);
     if (character->isReceivedMessage(message)) {
+        
+        switch (mMessageType) {
+            case XMessageType::XMessageTypeCharacterMoveLeft:
+                character->setRunDirection(XDirection::XDirectionLeft);
+                break;
+            case XMessageType::XMessageTypeCharacterMoveRight:
+                character->setRunDirection(XDirection::XDirectionRight);
+                break;
+            case XMessageType::XMessageTypeCharacterStop:
+                character->setRunDirection(XDirection::XDirectionDefault);
+            default:
+                break;
+        }
+        
         character->cleanupMessage(message);
         
         return true;

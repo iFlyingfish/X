@@ -25,17 +25,23 @@ public:
     typedef std::map<std::string,XState*> XStateMap;
     typedef XStateMap::iterator    XStateMapItr;
     
-    XStateMachine(const Value& name, XCharacter* characterRef);
+    XStateMachine(const std::string& name, XCharacter* characterRef);
     virtual ~XStateMachine();
     
-    virtual void enter(XCharacter* chartacter);
-    virtual void tick(XCharacter* chartacter);
-    virtual void exit(XCharacter* chartacter);
-
+    bool addState(XState* state, bool isRootState = false);
+    void enter(XCharacter* chartacter);
+    void tick(XCharacter* chartacter, float dt);
+    void exit(XCharacter* chartacter);
+    
+    void updateActiveState(float dt);
+    void evaluateTransitions();
+    
 private:
+    
     XStateMap mStateMap;
-  
+    XState* mRootState;
     XState* mActiveState;
+    XState* mPreState;
     
     XCharacter* mCharacterRef;
 };

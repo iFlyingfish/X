@@ -9,10 +9,14 @@
 #include "XCharacter.h"
 #include "XCharacterSprite.h"
 #include "XStateMachine.h"
+#include "XState.h"
+#include "XTransition.h"
 
 XCharacter::XCharacter(XCharcterSprite* characterSprite,int HP)
 :mCharcterSprite(characterSprite)
-,mHP(HP)
+,mBattleHP(HP)
+,mReceivedMessageList(new XMessageList())
+,mStateMachineList(XStateMachineList(0))
 {
    
 }
@@ -25,18 +29,42 @@ XCharacter::~XCharacter()
     }
 }
 
+void XCharacter::sLinkState(XState *firstState, XTransition *transition, XState *secondYesState, XState *secondNoState)
+{
+    firstState->addTransition(transition);
+    
+    if (secondYesState) {
+        transition->SetYesStateName(secondYesState->getName());
+    }
+    
+    if (secondNoState) {
+        transition->SetNoStateName(secondNoState->getName());
+    }
+}
+
 
 bool XCharacter::init()
 {
     return true;
 }
 
-void XCharacter::tick()
+void XCharacter::tick(float dt)
 {
     XStateMachineListItr it = mStateMachineList.begin();
     while (it != mStateMachineList.end()) {
-       // (*it)->tick();
+        (*it)->tick(this, dt);
         ++it;
+    }
+    
+    if (mReceivedMessageList) {
+        mReceivedMessageList->clear();
+    }
+}
+
+void XCharacter::firstEnter()
+{
+    for (auto stateMachine : mStateMachineList ) {
+        stateMachine->enter(this);
     }
 }
 
@@ -47,12 +75,12 @@ XCharcterSprite* XCharacter::getCharacterSprtie()
 
 void XCharacter::setHP(int HP)
 {
-    mHP = HP;
+    mBattleHP = HP;
 }
 
 int XCharacter::getHP() const
 {
-    return mHP;
+    return mBattleHP;
 }
 
 void XCharacter::receiveMessage(const XMessage &message)
@@ -76,13 +104,16 @@ void XCharacter::cleanupMessage(const XMessage &message)
 
 bool XCharacter::isReceivedMessage(const XMessage &message) const
 {
-    XMessageListLtr itr = mReceivedMessageList->begin();
-    
-    while (itr != mReceivedMessageList->end()) {
-        if (itr->mMessageType == message.mMessageType) {
-            return true;
+    if (mReceivedMessageList) {
+        XMessageListLtr itr = mReceivedMessageList->begin();
+        
+        while (itr != mReceivedMessageList->end()) {
+            if (itr->mMessageType == message.mMessageType) {
+                return true;
+            }
+            ++itr;
         }
-        ++itr;
+
     }
     
     return false;

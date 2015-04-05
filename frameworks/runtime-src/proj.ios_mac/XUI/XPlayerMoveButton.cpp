@@ -8,6 +8,7 @@
 
 #include "XPlayerMoveButton.h"
 #include "XMessagePool.h"
+#include "XMessage.h"
 
 XPlayerMoveButton* XPlayerMoveButton::create(const std::string &filename)
 {
@@ -77,12 +78,18 @@ bool XPlayerMoveButton::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *even
     Rect rightRect = Rect(btnSize.width * 0.5f, 0, btnSize.width * 0.5f, btnSize.height);
     
     if (leftRect.containsPoint(locationInNode)) {
-        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionLeft);
+        //XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionLeft);
+    
+        Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunLeft);
+        
         return true;
     }
     else if (rightRect.containsPoint(locationInNode))
     {
-        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionRight);
+//        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionRight);
+        
+        Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunRight);
+        
         return true;
     }
     
@@ -100,24 +107,35 @@ void XPlayerMoveButton::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *even
     Rect rightRect = Rect(btnSize.width * 0.5f, 0, btnSize.width * 0.5f, btnSize.height);
     
     if (leftRect.containsPoint(locationInNode)) {
-        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionLeft);
+//        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionLeft);
+        Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunLeft);
     }
     else if (rightRect.containsPoint(locationInNode))
     {
-        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionRight);
+//        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionRight);
+        
+        Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunRight);
+
     }
     else
     {
-        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionStatic);
+//        XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionStatic);
+        
+        Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunStop);
     }
 }
 
 void XPlayerMoveButton::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-    XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionStatic);
+//    XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionStatic);
+    
+    Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunStop);
+
 }
 
 void XPlayerMoveButton::onTouchCanceled(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-    XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionStatic);
+//    XMessagePool::getInstance()->setPlayerMoveDirection(XCharacterMoveDirectionStatic);
+    
+    Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(XHeroRunStop);
 }
