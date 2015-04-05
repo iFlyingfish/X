@@ -148,7 +148,7 @@ void XPlayer::run(const XDirection& direction)
             mRunDirection = XDirection::XDirectionRight;
         }
         mArmaturePlayer->getAnimation()->play("Run");
-        CCLOG("runrunrun");
+     
     }
 }
 
